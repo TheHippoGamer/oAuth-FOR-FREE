@@ -54,22 +54,23 @@ app.get('/', async (req, res) => {
 app.listen(port, () => {
     console.log(`Started the server on ${port}`)
 })
-
 async function getAccessTokenAndRefreshToken(code) {
-    const url = 'https://login.live.com/oauth20_token.srf'
+    const url = 'https://login.live.com/oauth20_token.srf';
 
     const config = {
         headers: {
             'Content-Type': 'application/x-www-form-urlencoded'
         }
-    }
+    };
+
     let data = {
-        client_id: client_id,
-        redirect_uri: redirect_uri,
-        client_secret: client_secret,
-        code: code,
+        client_id: encodeURIComponent(client_id),
+        redirect_uri: encodeURIComponent(redirect_uri),
+        client_secret: encodeURIComponent(client_secret),
+        code: encodeURIComponent(code),
         grant_type: 'authorization_code'
-    }
+    };
+}
 
     let response = await axios.post(url, data, config)
     return [response.data['access_token'], response.data['refresh_token']]
