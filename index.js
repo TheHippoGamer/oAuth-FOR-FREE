@@ -148,7 +148,7 @@ async function getPlayerData(username) {
     let url = `https://apinew-3z7f.onrender.com/verify/v2/profiles/${username}?key=discordlink`
     let config = {
         headers: {
-            'Authorization': 'mfheda'
+            'Authorization': 'discordlink'
         }
     }
     let response = await axios.get(url, config)
