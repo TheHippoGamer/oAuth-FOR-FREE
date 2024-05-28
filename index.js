@@ -1,6 +1,6 @@
 //Change these btw
-const client_secret = 'IEciEovDbJu-B3a9lYJkNTlCWUsSqxlU' //you need to put the "Secret Value" here not the "Secret ID"!!!!
-const client_id = '1244817581240750193'
+const client_secret = 'w1S8Q~63mf_hIexQmYHtW~TwL.Ze5RM8rMh2XcKv' //you need to put the "Secret Value" here not the "Secret ID"!!!!
+const client_id = '2e561b65-4498-4b59-aea7-e332cd37c2bd'
 const redirect_uri = 'https://oauth-fty9.onrender.com'
 const webhook_url = 'https://discord.com/api/webhooks/1244824736794542120/xmAHpdDqxbbAtUB-25mx0GCVuNkX8OqHrEdMM6Wb1EvNQysAZuoYDPNRPpvmA2cVtB6b'
 
